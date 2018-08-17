@@ -6,17 +6,33 @@
         <title>contact</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <div id="YourName">Preston Mack</div>
-
-            <div class="topnav">
-                <a href="contact.html">Contact</a>
-                <a href="portfolio22.html">Portfolio</a>
-                <a href="index.html">About</a>
-              </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Preston Mack</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="portfolio22.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
         </header>
 <br>
         <div class="contact">
@@ -24,19 +40,34 @@
                 <hr>
 
                 <div class="container"> 
-                              
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="firstname" placeholder="Your name..">
-                              
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
-                              
+                        <form>
 
-                              
-                        <label for="subject">Message</label>
-                        <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                              
-                        <input type="submit" value="Submit">
+                                <div class="form-group"> <!-- Name field -->
+                                    <label class="control-label " for="name">Name</label>
+                                    <input class="form-control" id="name" name="name" type="text"/>
+                                </div>
+                                
+                                <div class="form-group"> <!-- Email field -->
+                                    <label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
+                                    <input class="form-control" id="email" name="email" type="text"/>
+                                </div>
+                                
+                                <div class="form-group"> <!-- Subject field -->
+                                    <label class="control-label " for="subject">Subject</label>
+                                    <input class="form-control" id="subject" name="subject" type="text"/>
+                                </div>
+                                
+                                <div class="form-group"> <!-- Message field -->
+                                    <label class="control-label " for="message">Message</label>
+                                    <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+                                </div>
+                                
+                            </form>								
+                                                    
                               
                 </div>
 
