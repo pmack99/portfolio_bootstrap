@@ -9,16 +9,21 @@
 }
 
 body{
-    background-color: gray;
+    background-image: url("images/oriental.png");
+    margin:20px;
 }
 
-header{
-    display: 
+
+
+.media{
+    background-color: whitesmoke;
+    padding: 20px;
 }
-a{
+
+.nav-item{
     float: right;
 }
 
-.align-self-start mr-3{
+img{
     display: 50%;
 }
