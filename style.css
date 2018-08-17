@@ -1,0 +1,24 @@
+.navbar-brand{
+    display: block;
+    background-color: cadetblue;
+    color: whitesmoke;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    float: left;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    display: 
+}
+a{
+    float: right;
+}
+
+.align-self-start mr-3{
+    display: 50%;
+}

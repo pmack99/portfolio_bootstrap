@@ -1,0 +1,169 @@
+body{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/oriental.png");
+    background-color: #cccccc;
+}
+h3{
+    padding: 0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    padding-left: 20px;
+}
+
+header{
+    display: block;
+    width:100%;
+    max-width: 960px;
+    background-color: ffffff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    margin-left: 0px;
+    border-radius: 4px; 
+}
+
+.topnav {
+    background-color: lightgray;
+    overflow: hidden;
+
+}
+.topnav a{
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 25px;
+    background-color: lightgray;
+}
+
+.topnav a:hover{
+    background-color: darkgray;
+    color: whitesmoke;
+}
+
+.topnav a:active{
+    background-color: lightgray;
+    color: black;
+}
+#YourName{
+    float:left;
+    display: block;
+    width:250px;
+    height:70px;
+    background-color: darkgrey;
+    color: black;
+}
+
+.main{
+    display:block;
+    margin:0px;
+    background-color: #ffffff;
+    max-width: 920px;
+    height: auto;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+#headshot{
+    width:20%;
+    margin-right: 20px;
+    padding: 15px;
+    float: left;
+}
+
+.bioText{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contact{
+    display:block;
+    margin:0px;
+    background-color: #ffffff;
+    width:100%;
+    max-width: 920px;
+    height: auto;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #f2f2f2;
+    height: auto;
+    width:100%;
+    max-width: 920px;
+    padding-top: 10px;
+    border-radius: 4px; 
+}
+
+.background{
+
+    margin:0px;
+    background-color:#ffffff;
+    width:100%;
+    max-width: 920px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+footer{
+    display: block;
+    width:100%;
+    max-width: 960px;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    margin-left: 0px;
+    border-top: 5px solid aqua;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .main, .footer, .contact, .container, .header, .background, .wrapper{
+      width:100%;
+    }
